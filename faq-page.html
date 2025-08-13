@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>FAQ</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>FAQs</h1>
+  <div id="faq-container"></div>
+
+  <script>
+    fetch('config.json')
+      .then(res => res.json())
+      .then(data => {
+        const container = document.getElementById('faq-container');
+        Object.keys(data).forEach(category => {
+          const section = document.createElement('section');
+          section.innerHTML = `<h2>${category}</h2>`;
+          data[category].forEach(item => {
+            section.innerHTML += `
+              <details>
+                <summary>${item.question}</summary>
+                <p>${item.answer}</p>
+              </details>
+            `;
+          });
+          container.appendChild(section);
+        });
+      });
+  </script>
+</body>
+</html>
