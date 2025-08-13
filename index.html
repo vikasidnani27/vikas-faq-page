@@ -3,10 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <title>FAQ</title>
-  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: sans-serif;
+      line-height: 1.6;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    h2 {
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+      margin-top: 40px;
+      color: #555;
+    }
+    details {
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      margin-bottom: 15px;
+      padding: 10px;
+      background-color: #f9f9f9;
+      cursor: pointer;
+    }
+    summary {
+      font-weight: bold;
+      color: #333;
+    }
+    details p {
+      margin-top: 10px;
+      padding-left: 15px;
+      border-left: 2px solid #007bff;
+    }
+  </style>
 </head>
 <body>
-  <h1>FAQs</h1>
+  <h1>Gartner Peer Programs FAQs</h1>
   <div id="faq-container"></div>
 
   <script>
@@ -16,14 +51,23 @@
         const container = document.getElementById('faq-container');
         Object.keys(data).forEach(category => {
           const section = document.createElement('section');
-          section.innerHTML = `<h2>${category}</h2>`;
+          
+          const title = document.createElement('h2');
+          title.textContent = category;
+          section.appendChild(title);
+          
           data[category].forEach(item => {
-            section.innerHTML += `
-              <details>
-                <summary>${item.question}</summary>
-                <p>${item.answer}</p>
-              </details>
-            `;
+            const details = document.createElement('details');
+            
+            const summary = document.createElement('summary');
+            summary.textContent = item.question;
+            details.appendChild(summary);
+            
+            const paragraph = document.createElement('p');
+            paragraph.innerHTML = item.answer; // Use innerHTML to allow for formatting
+            details.appendChild(paragraph);
+            
+            section.appendChild(details);
           });
           container.appendChild(section);
         });
