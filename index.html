@@ -1,57 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="UTF-8">
-  <title>Peer Programs FAQ</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body { font-family: Arial, sans-serif; margin: 2em; background: #f7f7f7; }
-    h1 { color: #222; }
-    h2 { margin-top: 2em; color: #2b6cb0; }
-    .faq { background: #fff; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.03); margin-bottom: 1em; padding: 1em; }
-    .question { font-weight: bold; margin-bottom: 0.5em; }
-    .answer { margin-left: 1em; }
-    a { color: #2b6cb0; text-decoration: underline; }
-    @media (max-width: 600px) {
-      body { margin: 0.5em; }
-      .faq { padding: 0.5em; }
-    }
-  </style>
+  <title>FAQ</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Peer Programs FAQ</h1>
-  <div id="faq-content">Loading...</div>
+  <h1>FAQs</h1>
+  <div id="faq-container"></div>
+
   <script>
     fetch('config.json')
-      .then(response => {
-        if (!response.ok) throw new Error('config.json not found');
-        return response.json();
-      })
+      .then(res => res.json())
       .then(data => {
-        const container = document.getElementById('faq-content');
-        container.innerHTML = '';
-        data.peerProgramsFAQ.forEach(section => {
-          const sectionTitle = document.createElement('h2');
-          sectionTitle.textContent = section.category;
-          container.appendChild(sectionTitle);
-          section.faqs.forEach(faq => {
-            const faqDiv = document.createElement('div');
-            faqDiv.className = 'faq';
-            const q = document.createElement('div');
-            q.className = 'question';
-            q.innerHTML = faq.question;
-            const a = document.createElement('div');
-            a.className = 'answer';
-            a.innerHTML = faq.answer;
-            faqDiv.appendChild(q);
-            faqDiv.appendChild(a);
-            container.appendChild(faqDiv);
+        const container = document.getElementById('faq-container');
+        Object.keys(data).forEach(category => {
+          const section = document.createElement('section');
+          section.innerHTML = `<h2>${category}</h2>`;
+          data[category].forEach(item => {
+            section.innerHTML += `
+              <details>
+                <summary>${item.question}</summary>
+                <p>${item.answer}</p>
+              </details>
+            `;
           });
+          container.appendChild(section);
         });
-      })
-      .catch(error => {
-        document.getElementById('faq-content').textContent = 'Error loading FAQ data.';
-        console.error(error);
       });
   </script>
 </body>
