@@ -1,33 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>FAQ</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8" />
+<title>FAQ Page</title>
+<style>
+   body { font-family: Arial, sans-serif; padding: 20px; max-width: 800px; margin: auto; }
+   section { margin-bottom: 2em; }
+   h2 { border-bottom: 2px solid #333; padding-bottom: 0.3em; }
+   details { margin-bottom: 1em; }
+   summary { cursor: pointer; font-weight: bold; }
+   p { margin-left: 1.2em; }
+</style>
 </head>
 <body>
-  <h1>FAQs</h1>
-  <div id="faq-container"></div>
-
-  <script>
-    fetch('config.json')
-      .then(res => res.json())
-      .then(data => {
-        const container = document.getElementById('faq-container');
-        Object.keys(data).forEach(category => {
-          const section = document.createElement('section');
-          section.innerHTML = `<h2>${category}</h2>`;
-          data[category].forEach(item => {
-            section.innerHTML += `
-              <details>
-                <summary>${item.question}</summary>
-                <p>${item.answer}</p>
-              </details>
-            `;
-          });
-          container.appendChild(section);
-        });
-      });
-  </script>
+<h1>Frequently Asked Questions</h1>
+<div id="faq-container"></div>
+<script>
+   fetch('config.json')
+     .then(res => {
+       if (!res.ok) throw new Error('Could not load FAQ data');
+       return res.json();
+     })
+     .then(data => {
+       const container = document.getElementById('faq-container');
+       Object.keys(data).forEach(category => {
+         const section = document.createElement('section');
+         const heading = document.createElement('h2');
+         heading.textContent = category;
+         section.appendChild(heading);
+         data[category].forEach(faq => {
+           const details = document.createElement('details');
+           const summary = document.createElement('summary');
+           summary.textContent = faq.question;
+           details.appendChild(summary);
+           if (faq.answer && faq.answer.trim() !== "") {
+             const answer = document.createElement('p');
+             answer.textContent = faq.answer;
+             details.appendChild(answer);
+           }
+           section.appendChild(details);
+         });
+         container.appendChild(section);
+       });
+     })
+     .catch(err => {
+       document.getElementById('faq-container').textContent = 'Failed to load FAQs.';
+       console.error(err);
+     });
+</script>
 </body>
 </html>
