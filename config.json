@@ -1,8 +1,85 @@
 {
-    "Peer Programs FAQ": [
-      { "question": "How do I submit a review?", "answer": "You can submit a review by..." }
-    ],
-    "Reviews FAQ": [
-      { "question": "Can I edit my review?", "answer": "Yes, go to your dashboard..." }
-    ]
-  }
+ "Peer Programs FAQ": [
+   {
+     "question": "I would like to submit a Peer Insights review. How can I do that?",
+     "answer": ""
+   },
+   {
+     "question": "I can't find the market/category and vendor I'd like to explore or review - will Peer Insights be expanded to cover more markets/categories?",
+     "answer": ""
+   },
+   {
+     "question": "Can I change my Peer Insights review after I've posted it?",
+     "answer": ""
+   },
+   {
+     "question": "Which reviews are approved and what is the moderation process?",
+     "answer": ""
+   },
+   {
+     "question": "If I submit a Peer Insights review, how long will it be before the review appears online?",
+     "answer": ""
+   },
+   {
+     "question": "What information about a reviewer is visible in Gartner Peer Insights?",
+     "answer": ""
+   },
+   {
+     "question": "How many times may an individual submit a Peer Insights review?",
+     "answer": ""
+   },
+   {
+     "question": "How do you verify that reviews are from legitimate IT or end-user professionals?",
+     "answer": ""
+   },
+   {
+     "question": "Can I find Peer Insights reviews from actual end-users of the products and services, or just from IT professionals? Can end-users submit Peer Insights reviews?",
+     "answer": ""
+   },
+   {
+     "question": "Do Peer Insights reviews ever expire?",
+     "answer": ""
+   },
+   {
+     "question": "Does Gartner limit the vendors covered in a market/category?",
+     "answer": ""
+   },
+   {
+     "question": "What if I see inaccuracies or something else of concern in someone else's review?",
+     "answer": ""
+   },
+   {
+     "question": "Do Gartner Research Analysts provide any input into the review questions?",
+     "answer": ""
+   },
+   {
+     "question": "Will Gartner Research Analysts use Peer Insights in their research?",
+     "answer": ""
+   },
+   {
+     "question": "May I send a private message to the author of a Peer Insights Review?",
+     "answer": ""
+   },
+   {
+     "question": "How does Gartner collect and display information about a review's source?",
+     "answer": ""
+   },
+   {
+     "question": "Do Peer Insights reviewers receive anything in exchange for submitting their reviews?",
+     "answer": ""
+   },
+   {
+     "question": "Why is the number of reviews different from the number of ratings?",
+     "answer": ""
+   },
+   {
+     "question": "How can I ensure that my reviews are published & not rejected on the basis of content quality?",
+     "answer": ""
+   },
+   {
+     "question": "How are Markets and Categories defined?",
+     "answer": ""
+   }
+ ],
+ "Reviews FAQ": []
+}
