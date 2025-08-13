@@ -1,76 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>FAQ</title>
+  <title>Peer Programs FAQ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    body {
-      font-family: sans-serif;
-      line-height: 1.6;
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-    h1 {
-      text-align: center;
-      color: #333;
-    }
-    h2 {
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 5px;
-      margin-top: 40px;
-      color: #555;
-    }
-    details {
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      margin-bottom: 15px;
-      padding: 10px;
-      background-color: #f9f9f9;
-      cursor: pointer;
-    }
-    summary {
-      font-weight: bold;
-      color: #333;
-    }
-    details p {
-      margin-top: 10px;
-      padding-left: 15px;
-      border-left: 2px solid #007bff;
+    body { font-family: Arial, sans-serif; margin: 2em; background: #f7f7f7; }
+    h1 { color: #222; }
+    h2 { margin-top: 2em; color: #2b6cb0; }
+    .faq { background: #fff; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.03); margin-bottom: 1em; padding: 1em; }
+    .question { font-weight: bold; margin-bottom: 0.5em; }
+    .answer { margin-left: 1em; }
+    a { color: #2b6cb0; text-decoration: underline; }
+    @media (max-width: 600px) {
+      body { margin: 0.5em; }
+      .faq { padding: 0.5em; }
     }
   </style>
 </head>
 <body>
-  <h1>Gartner Peer Programs FAQs</h1>
-  <div id="faq-container"></div>
-
+  <h1>Peer Programs FAQ</h1>
+  <div id="faq-content">Loading...</div>
   <script>
     fetch('config.json')
-      .then(res => res.json())
+      .then(response => {
+        if (!response.ok) throw new Error('config.json not found');
+        return response.json();
+      })
       .then(data => {
-        const container = document.getElementById('faq-container');
-        Object.keys(data).forEach(category => {
-          const section = document.createElement('section');
-          
-          const title = document.createElement('h2');
-          title.textContent = category;
-          section.appendChild(title);
-          
-          data[category].forEach(item => {
-            const details = document.createElement('details');
-            
-            const summary = document.createElement('summary');
-            summary.textContent = item.question;
-            details.appendChild(summary);
-            
-            const paragraph = document.createElement('p');
-            paragraph.innerHTML = item.answer; // Use innerHTML to allow for formatting
-            details.appendChild(paragraph);
-            
-            section.appendChild(details);
+        const container = document.getElementById('faq-content');
+        container.innerHTML = '';
+        data.peerProgramsFAQ.forEach(section => {
+          const sectionTitle = document.createElement('h2');
+          sectionTitle.textContent = section.category;
+          container.appendChild(sectionTitle);
+          section.faqs.forEach(faq => {
+            const faqDiv = document.createElement('div');
+            faqDiv.className = 'faq';
+            const q = document.createElement('div');
+            q.className = 'question';
+            q.innerHTML = faq.question;
+            const a = document.createElement('div');
+            a.className = 'answer';
+            a.innerHTML = faq.answer;
+            faqDiv.appendChild(q);
+            faqDiv.appendChild(a);
+            container.appendChild(faqDiv);
           });
-          container.appendChild(section);
         });
+      })
+      .catch(error => {
+        document.getElementById('faq-content').textContent = 'Error loading FAQ data.';
+        console.error(error);
       });
   </script>
 </body>
