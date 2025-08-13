@@ -1,8 +1,597 @@
-{
-    "Peer Programs FAQ": [
-      { "question": "How do I submit a review?", "answer": "You can submit a review by..." }
-    ],
-    "Reviews FAQ": [
-      { "question": "Can I edit my review?", "answer": "Yes, go to your dashboard..." }
-    ]
-  }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Peer Programs FAQ</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 2em; background: #f9f9f9; color: #222; }
+        h1, h2, h3 { color: #2a3d6c; }
+        a { color: #1a73e8; }
+        hr { border: none; border-top: 1px solid #ccc; margin: 2em 0; }
+        ul { margin-left: 1.5em; }
+        .faq-section { margin-bottom: 2em; }
+        .question { font-weight: bold; margin-top: 1.5em; }
+        .answer { margin-bottom: 1em; }
+        .backtotop { font-size: 0.9em; }
+    </style>
+</head>
+<body>
+    <a name="top"></a>
+    <h1>Peer Programs FAQ</h1>
+
+    <h2>Reviews FAQ</h2>
+    <ul>
+        <li><a href="#rq1">I would like to submit a Peer Insights review. How can I do that?</a></li>
+        <li><a href="#rq2">I can't find the market/category and vendor I'd like to explore or review - will Peer Insights be expanded to cover more markets/categories?</a></li>
+        <li><a href="#rq3">Can I change my Peer Insights review after I've posted it?</a></li>
+        <li><a href="#rq4">Which reviews are approved and what is the moderation process?</a></li>
+        <li><a href="#rq5">If I submit a Peer Insights review, how long will it be before the review appears online?</a></li>
+        <li><a href="#rq6">What information about a reviewer is visible in Gartner Peer Insights?</a></li>
+        <li><a href="#rq7">How many times may an individual submit a Peer Insights review?</a></li>
+        <li><a href="#rq8">How do you verify that reviews are from legitimate IT or end-user professionals?</a></li>
+        <li><a href="#rq9">Can I find Peer Insights reviews from actual end-users of the products and services, or just from IT professionals? Can end-users submit Peer Insights reviews?</a></li>
+        <li><a href="#rq10">Do Peer Insights reviews ever expire?</a></li>
+        <li><a href="#rq11">Does Gartner limit the vendors covered in a market/category?</a></li>
+        <li><a href="#rq12">What if I see inaccuracies or something else of concern in someone else's review?</a></li>
+        <li><a href="#rq13">Do Gartner Research Analysts provide any input into the review questions?</a></li>
+        <li><a href="#rq14">Will Gartner Research Analysts use Peer Insights in their research?</a></li>
+        <li><a href="#rq15">May I send a private message to the author of a Peer Insights Review?</a></li>
+        <li><a href="#rq16">How does Gartner collect and display information about a review's source?</a></li>
+        <li><a href="#rq17">Do Peer Insights reviewers receive anything in exchange for submitting their reviews?</a></li>
+        <li><a href="#rq18">Why is the number of reviews different from the number of ratings?</a></li>
+        <li><a href="#rq19">How can I ensure that my reviews are published & not rejected on the basis of content quality?</a></li>
+        <li><a href="#rq20">How are Markets and Categories defined?</a></li>
+    </ul>
+
+    <h2>Community FAQ</h2>
+    <ul>
+        <li><a href="#cq1">What is Peer Community?</a></li>
+        <li><a href="#cq2">How does the Peer Community points system work?</a></li>
+        <li><a href="#cq3">How do I ask a question?</a></li>
+        <li><a href="#cq4">How do I add a Poll?</a></li>
+        <li><a href="#cq5">I made a post or comment but I don’t see it on the platform — why is that?</a></li>
+        <li><a href="#cq6">Where can I find a post that I made previously?</a></li>
+        <li><a href="#cq7">How do I know who posted a Q&A or Poll?</a></li>
+        <li><a href="#cq8">How do I view Poll results?</a></li>
+        <li><a href="#cq9">How do I filter, download, and share Poll results?</a></li>
+        <li><a href="#cq10">How do I answer a Q&A post?</a></li>
+        <li><a href="#cq11">I’m unable to comment on a post or participate in a poll — why is that?</a></li>
+        <li><a href="#cq12">How do I access real-time Benchmark Surveys?</a></li>
+        <li><a href="#cq13">Where can I access One-Minute Insights reports?</a></li>
+        <li><a href="#cq14">Where can I find trending content?</a></li>
+        <li><a href="#cq15">How do I search for relevant existing insights and posts?</a></li>
+        <li><a href="#cq16">How do I save posts that I’m interested in? Where can I access my saved content?</a></li>
+        <li><a href="#cq17">Who are “Ambassadors”? How can I apply to be one?</a></li>
+        <li><a href="#cq18">Can I invite my peers to join the Peer Community?</a></li>
+        <li><a href="#cq19">How do I share posts? What will be visible to non-members?</a></li>
+        <li><a href="#cq20">Why does my account need to be verified?</a></li>
+        <li><a href="#cq21">How do I verify my account?</a></li>
+        <li><a href="#cq22">I already verified my account – why did I lose my verification status?</a></li>
+        <li><a href="#cq23">How do I change Expertise in my profile?</a></li>
+        <li><a href="#cq24">How do I add my LinkedIn and Twitter accounts to my profile?</a></li>
+        <li><a href="#cq25">Will my profile be searchable?</a></li>
+        <li><a href="#cq26">How do I unsubscribe from Peer Community emails?</a></li>
+        <li><a href="#cq27">How do I delete my account?</a></li>
+        <li><a href="#cq28">Where can I find general account support?</a></li>
+    </ul>
+    <hr>
+
+    <!-- Reviews FAQ -->
+    <div class="faq-section" id="rq1">
+        <div class="question">I would like to submit a Peer Insights review. How can I do that?</div>
+        <div class="answer">
+            Go to <a href="https://www.gartner.com/reviews/survey/vendor-product?source=faq">www.gartner.com/reviews/survey/vendor-product</a>. If you experience any issues submitting a review, please <a href="https://www.gartner.com/reviews/contactus">contact us</a>. You will receive a response back within 3 business days.
+        </div>
+        <div class="backtotop"><a href="#top">Back to top</a></div>
+    </div>
+    <hr>
+    <div class="faq-section" id="rq2">
+        <div class="question">I can't find the market/category and vendor I'd like to explore or review - will Peer Insights be expanded to cover more markets/categories?</div>
+        <div class="answer">
+            Absolutely - please check back later. Our goal is to expand Gartner Peer Insights to cover many more markets/categories. We will continue to roll out new markets/categories in a controlled fashion, prioritizing those markets/categories with high readership in our expert research. Though, you can suggest a new category to be opened on Peer Insights by submitting this <a href="https://surveys.gartner.com/s/CategorySuggestions">suggestion form</a>. Your suggestion will then be evaluated by the Peer Insights team.
+        </div>
+        <div class="backtotop"><a href="#top">Back to top</a></div>
+    </div>
+    <hr>
+    <div class="faq-section" id="rq3">
+        <div class="question">Can I change my Peer Insights review after I've posted it?</div>
+        <div class="answer">
+            In time you will be able to edit a review directly from the website. For now, if you need to make any edits or changes, please contact us.
+        </div>
+        <div class="backtotop"><a href="#top">Back to top</a></div>
+    </div>
+    <hr>
+    <div class="faq-section" id="rq4">
+        <div class="question">Which reviews are approved and what is the moderation process?</div>
+        <div class="answer">
+            Reviews are assessed to determine whether or not a review meets Gartner Peer Insights' standards for context, quality, and relevance. If a review fails to meet these guidelines, an email is sent to the reviewer asking for additional information, post which it is re-assessed for publication.<br>
+            <br>
+            A great submission typically has the following characteristics:
+            <ul>
+                <li>Comments to explain the corresponding ratings</li>
+                <li>Variance in ratings throughout (it is unlikely that the reviewer would feel the same about every aspect of a product or service)</li>
+                <li>Ratings are logically consistent (the overall ratings are in line with the averages of the sub-ratings)</li>
+                <li>Demonstration of experience and expertise with regard to the respective product</li>
+            </ul>
+            Please note, it is the discretion of the Peer Insights group to determine how content is approved and published on the site. Content may be approved as full reviews or aggregated ratings only.
+        </div>
+        <div class="backtotop"><a href="#top">Back to top</a></div>
+    </div>
+    <hr>
+    <div class="faq-section" id="rq5">
+        <div class="question">If I submit a Peer Insights review, how long will it be before the review appears online?</div>
+        <div class="answer">
+            There is a moderation process to ensure that all reviews are authentic and readable. During the review moderation process, you may receive an email asking for additional information to process your review. If you do not see your review in 10 business days after you submitted it, please <a href="https://www.gartner.com/reviews/contactus">contact us</a>.
+        </div>
+        <div class="backtotop"><a href="#top">Back to top</a></div>
+    </div>
+    <hr>
+    <div class="faq-section" id="rq6">
+        <div class="question">What information about a reviewer is visible in Gartner Peer Insights?</div>
+        <div class="answer">
+            The Reviewer Profile in a Gartner Peer Insights review contains demographic data about the reviewer and their company, such as job title, role, industry, and company size, but does not include the reviewer's actual name or company name in order to prevent personal identification.
+        </div>
+        <div class="backtotop"><a href="#top">Back to top</a></div>
+    </div>
+    <hr>
+    <div class="faq-section" id="rq7">
+        <div class="question">How many times may an individual submit a Peer Insights review?</div>
+        <div class="answer">
+            There is no limit on the number of Peer Insights reviews that an individual can submit - though only one review can be submitted on a given vendor's products in any given market/category, and you must be qualified to write each review. In the future, the author will be able to update their review to add new information over time.
+        </div>
+        <div class="backtotop"><a href="#top">Back to top</a></div>
+    </div>
+    <hr>
+    <div class="faq-section" id="rq8">
+        <div class="question">How do you verify that reviews are from legitimate IT or end-user professionals?</div>
+        <div class="answer">
+            Reviewers are verified through a multi-step process including completion of a profile with their e-mail, job role, title and details about their organization. For a review to be posted on Peer Insights, the writer must:
+            <ul>
+                <li>Attest to the authenticity of their review by certifying that are (i) not an employed by the vendor or employed by a competitor of the vendor, (ii) employed by an organization with an exclusive relationship (this includes exclusive partners, value-added resellers, system integrators and consultants); and (iii) their feedback is based entirely on their own personal experience with this vendor's product/service.</li>
+                <li>Have an identifiable corporate e-mail address that matches their stated company;</li>
+                <li>Be an IT professional or otherwise involved in technology purchasing;</li>
+                <li>Have a confirmed profile on gartner.com or a credible external site (e.g., LinkedIn) that verifies their identity, employer, and role;</li>
+                <li>Not be employed by a company that has a direct stake in the market/category or product being reviewed (this includes system integrators and consultants, as well as the company whose product is being reviewed or competitors in that market/category).</li>
+            </ul>
+            If you come across a review that looks illegitimate, please <a href="https://www.gartner.com/reviews/contactus">contact us</a>.
+        </div>
+        <div class="backtotop"><a href="#top">Back to top</a></div>
+    </div>
+    <hr>
+    <div class="faq-section" id="rq9">
+        <div class="question">Can I find Peer Insights reviews from actual end-users of the products and services, or just from IT professionals? Can end-users submit Peer Insights reviews?</div>
+        <div class="answer">
+            You will find Peer Insights reviews from a variety of individuals involved in all aspects of selecting, deploying, servicing, and using the products and services covered. To determine what experience an author has with the product or service being reviewed, look in the "Additional Context" section of the review for the reviewer's involvement.<br>
+            <br>
+            We welcome the insights from end-users of products and services, and those individuals may submit a Peer Insights review. They should clearly indicate they are an end-user in the question about their involvement with the product or services.
+        </div>
+        <div class="backtotop"><a href="#top">Back to top</a></div>
+    </div>
+    <hr>
+    <div class="faq-section" id="rq10">
+        <div class="question">Do Peer Insights reviews ever expire?</div>
+        <div class="answer">
+            No, Gartner Peer insights reviews do not expire and will remain readable on the site. This approach to expiring reviews may change overtime as we continue to evaluate the best approach to meet end user needs.
+        </div>
+        <div class="backtotop"><a href="#top">Back to top</a></div>
+    </div>
+    <hr>
+    <div class="faq-section" id="rq11">
+        <div class="question">Does Gartner limit the vendors covered in a market/category?</div>
+        <div class="answer">
+            No. Reviewers may select from a drop-down list of vendors in a market/category or they may select "Other" and write-in a vendor not included in the drop-down list. Reviews with write-in vendors will only be approved after confirming the vendor belongs in the market/category.
+        </div>
+        <div class="backtotop"><a href="#top">Back to top</a></div>
+    </div>
+    <hr>
+    <div class="faq-section" id="rq12">
+        <div class="question">What if I see inaccuracies or something else of concern in someone else's review?</div>
+        <div class="answer">
+            If you have concerns about the accuracy or validity of a review, please <a href="https://www.gartner.com/reviews/contactus">contact us</a>. Be sure to include the specific review in question and the reason you consider it to be invalid.
+        </div>
+        <div class="backtotop"><a href="#top">Back to top</a></div>
+    </div>
+    <hr>
+    <div class="faq-section" id="rq13">
+        <div class="question">Do Gartner Research Analysts provide any input into the review questions?</div>
+        <div class="answer">
+            Gartner Research Analysts helped to develop the baseline survey to ensure a structured, objective and consistent approach to the reviews across markets. Additionally, Analysts provided guidance on questions specific to a market.
+        </div>
+        <div class="backtotop"><a href="#top">Back to top</a></div>
+    </div>
+    <hr>
+    <div class="faq-section" id="rq14">
+        <div class="question">Will Gartner Research Analysts use Peer Insights in their research?</div>
+        <div class="answer">
+            At this time, individual quotes from Gartner Peer Insights will not be used in published research, presentations or other client interactions. However, Gartner Peer Insights reviews will become a new source of information, to be considered along with a variety of other factors, by Gartner Analysts. Analysts conduct in-depth primary and secondary research as the underpinning of the research process. They also draw from a vast network of sources, including interactions with end-user clients, technology providers, and industry leaders, in formats ranging from client inquiries, 1:1 meetings at events and a variety of other client interactions. Analysts may also incorporate content from academic, journalistic and scientific sources. While end-user feedback is important, it is one of many criteria that are considered.
+        </div>
+        <div class="backtotop"><a href="#top">Back to top</a></div>
+    </div>
+    <hr>
+    <div class="faq-section" id="rq15">
+        <div class="question">May I send a private message to the author of a Peer Insights Review?</div>
+        <div class="answer">
+            No. We are very careful to protect the identity of our reviewers to encourage them to provide all relevant detail about the products and services they review.
+        </div>
+        <div class="backtotop"><a href="#top">Back to top</a></div>
+    </div>
+    <hr>
+    <div class="faq-section" id="rq16">
+        <div class="question">How does Gartner collect and display information about a review's source?</div>
+        <div class="answer">
+            Gartner collects Peer Insights reviews from individuals through direct outreach. Many technology vendors also encourage their customers to review their solutions on Peer Insights. Peer Insights reviewers are asked whether Gartner or a vendor asked them to submit their review on Peer Insights. When a review's source information is available, Gartner displays that information in the review.
+        </div>
+        <div class="backtotop"><a href="#top">Back to top</a></div>
+    </div>
+    <hr>
+    <div class="faq-section" id="rq17">
+        <div class="question">Do Peer Insights reviewers receive anything in exchange for submitting their reviews?</div>
+        <div class="answer">
+            Gartner sometimes offers gifts of nominal value to individuals for submitting reviews on Peer Insights, and does not prohibit vendors from doing the same. Nominal gifts are defined as valued at $25 USD or less. Starting on December 2016, all Peer Insights reviewers are asked whether they were offered an incentive for submitting their review. When incentive information is available about a review, Gartner displays that information in the review.<br>
+            <br>
+            Laws and regulations in many countries prohibit government employees from accepting gifts of any value in exchange for reviewing technology solutions. Gartner makes every reasonable effort to avoid offering gifts to public employees, but takes no responsibility for the decisions of public employees to accept gifts from Gartner or a vendor in exchange for submitting a Peer Insights review.
+        </div>
+        <div class="backtotop"><a href="#top">Back to top</a></div>
+    </div>
+    <hr>
+    <div class="faq-section" id="rq18">
+        <div class="question">Why is the number of reviews different from the number of ratings?</div>
+        <div class="answer">
+            In certain cases we allow reviewers to withhold their qualitative review feedback from public view, in order to protect their confidentiality. When a user opts to withhold their qualitative review feedback, we include their quantitative feedback in the averaged star rating and other aggregated fields under the "Ratings" tab, but we exclude their qualitative review feedback from the "Reviews" section. The Total Reviews also reflects the number available under all active filters, whereas the average rating and number of ratings remains constant when filters are applied.
+        </div>
+        <div class="backtotop"><a href="#top">Back to top</a></div>
+    </div>
+    <hr>
+    <div class="faq-section" id="rq19">
+        <div class="question">How can I ensure that my reviews are published & not rejected on the basis of content quality?</div>
+        <div class="answer">
+            Reviews must meet the following guidelines to get published. If not they can be removed, at our discretion. Reviewers that violate our guidelines repeatedly, attempt to abuse our program, or are found to be spammers may have their reviews scrutinized & disabled, and may be subject to penalties, up to and including legal penalties.
+            <ul>
+                <li>Reviews must not contain plagiarized content. We do not allow reviews to be copied from another source, including our own website.</li>
+                <li>Reviews must not contain generic content and should highlight experiences related to vendor/product. We do not approve reviews which have generic comments or only talk about the vendor. The review should provide reviewer’s experiences on overall product or its specific features.</li>
+                <li>Reviews must not contain Foreign Language. We do not allow reviews which are submitted in any language other than English.</li>
+                <li>Reviews with Low/No Content. We do not allow reviews which have no/low/gibberish content.</li>
+                <li>Reviews must be posted by the actual reviewer. In keeping with our verification process, we do not allow reviews to be posted on another’s behalf or under an assumed identity.</li>
+                <li>Reviews must not contain abusive, hateful, threatening, or harassing content. We do not allow reviews to contain personal threats, obscenities, or hate speech.</li>
+                <li>Reviews must not include others’ personal information. We do not allow reviews to contain information that can be used to identify an individual or otherwise compromise their privacy. Personal information includes names, addresses, phone numbers, or any other type of personally identifying information.</li>
+                <li>Reviews must not promote or disparage a product other than the product being reviewed. We do not allow reference to any product(s) or vendor(s) other than the product being reviewed unless integration with another application is required to leave a helpful review.</li>
+                <li>Reviews must not violate any legal agreements. A review must not violate any third party confidentiality, non-disclosure, or contractual obligations.</li>
+                <li>Reviews must not contain financial information. A review must not contain any references to specific amounts of money spent while using the product.</li>
+                <li>Reviews must not accuse or make reports of fraud or any criminal activity. Unless the fraud or activity has been proven by a court of law, we do not allow references to legal matters in our reviews. Our team is not qualified to make a decision as to the truthfulness of a legal accusation.</li>
+            </ul>
+        </div>
+        <div class="backtotop"><a href="#top">Back to top</a></div>
+    </div>
+    <hr>
+    <div class="faq-section" id="rq20">
+        <div class="question">How are Markets and Categories defined?</div>
+        <div class="answer">
+            Markets and Categories are both collections of software or services of comparable products or service offerings. The difference between Markets and Categories is in how they are defined. Markets are defined by experts within Gartner Research. The market definitions are published in Magic Quadrant and Market Guide documents. Through end-user feedback, we know that there is a desire to learn about peer experiences with other products and vendors beyond these formally defined markets. To that end, Gartner Peer Insights creates and defines Categories in other technology and business areas.
+        </div>
+        <div class="backtotop"><a href="#top">Back to top</a></div>
+    </div>
+
+    <!-- Community FAQ -->
+    <hr>
+    <div class="faq-section" id="cq1">
+        <div class="question">What is Peer Community?</div>
+        <div class="answer">
+            Peer Community is a digital community platform for verified members to engage in discussions with peers and share meaningful knowledge in real-time. Members can post their own Q&A open-text threads and Polls, as well as connect and network with each other. Crowd-sourced insights are supported by Gartner- initiated peer Benchmark Surveys and their matching One-Minute Insights reports. Peer Community produces entirely peer-driven, high-quality, and detailed insights in a trusted environment that is meant to eliminate the distractions of self or brand-promotion, sales, and recruiting.
+        </div>
+        <div class="backtotop"><a href="#top">Back to top</a></div>
+    </div>
+    <hr>
+    <div class="faq-section" id="cq2">
+        <div class="question">How does the Peer Community points system work?</div>
+        <div class="answer">
+            Peer Community is a give-to-get platform. Members earn points at Gartner’s discretion when they submit high-quality contributions to the community that comply with our Guidelines- including, but not limited to, participation in Q&As, Polls, and Benchmark Surveys.<br>
+            <br>
+            Members can earn two types of Points: Contribution Points and Gift Card Points.<br>
+            <br>
+            Contribution Points may be leveraged by verified members to post their own custom Q&As or Polls.<br>
+            <br>
+            Gift Card Points may be redeemed by verified members on the mobile app for <a href="https://apps.apple.com/us/app/pulse-q-a/id1440075320">iPhone</a> or <a href="https://play.google.com/store/apps/details?id=qa.pulse.app&hl=en_US">Android</a>.<br>
+            <br>
+            Once you're in the mobile app:
+            <ol>
+                <li>Navigate to the menu by selecting your profile’s avatar at the top left corner and then tap Rewards</li>
+                <li>Tap redeem gifts/view history under Gift Card Points to access the gift redemption portal.</li>
+                <li>Choose the applicable details from the drop-down menu and the available options.</li>
+                <li>After you have redeemed your points, you will receive an email with a link to claim your gift card.</li>
+            </ol>
+            See <a href="https://www.gartner.com/reviews/guidelines">Gartner Peer Programs Community Guidelines</a> for more details on Points and eligibility.
+        </div>
+        <div class="backtotop"><a href="#top">Back to top</a></div>
+    </div>
+    <hr>
+    <div class="faq-section" id="cq3">
+        <div class="question">How do I ask a question?</div>
+        <div class="answer">
+            <ol>
+                <li>Navigate to the top of the page and click on the Ask a question button.</li>
+                <li>Choose which Department(s) you would like to ask. Based on your profile’s alignment and access, you may have the option to post the question to multiple departments.</li>
+                <li>Add relevant Topic tags to reach even more curated members.</li>
+                <li>Click Post to publish your question. If you are a verified user, the post will go live immediately. If you're not a verified user, the post will be submitted and reviewed before it goes live.</li>
+            </ol>
+            Your Department(s) and profile details are set when you first sign-in and confirmed during the verification process. If you believe these details are incorrect or would like to request a change, please reach out to <a href="mailto:peercommunity@gartner.com">peercommunity@gartner.com</a>.
+        </div>
+        <div class="backtotop"><a href="#top">Back to top</a></div>
+    </div>
+    <hr>
+    <div class="faq-section" id="cq4">
+        <div class="question">How do I add a Poll?</div>
+        <div class="answer">
+            <ol>
+                <li>Navigate to the menu bar at the top of the page and click on the Create a Poll button.</li>
+                <li>Choose which Department(s) you would like to ask. Based on your profile’s alignment and access, you may have the option to post the poll to multiple departments. Populate the possible responses under Poll Choices, select Add Choice in order to expand your list of possible responses.</li>
+                <li>Under Poll Type, choose whether the poll should allow participants to select more than one answer (i.e. multi select or single select).</li>
+                <li>Set the appropriate recurrence of the poll under the Repeat Poll option. Recurring polls will re-launch automatically and ongoing results visualized as part of the original posting.</li>
+                <li>Add relevant Topic tags to reach even more curated members.</li>
+                <li>Click Post to publish your Poll. If you are a verified user, the post will go live immediately. If you're not a verified user, the post will be submitted and reviewed before it goes live.</li>
+            </ol>
+            Your Department(s) and profile details are set when you first sign-in and confirmed during the verification process. If you believe these details are incorrect or would like to request a change, please reach out to <a href="mailto:peercommunity@gartner.com">peercommunity@gartner.com</a>.
+        </div>
+        <div class="backtotop"><a href="#top">Back to top</a></div>
+    </div>
+    <hr>
+    <div class="faq-section" id="cq5">
+        <div class="question">I made a post or comment but I don’t see it on the platform — why is that?</div>
+        <div class="answer">
+            Posts made by unverified users are submitted for review before they go live on the platform; this includes Q&As, Polls and comments. Once you have been verified, your posts will go live immediately. Additionally, posts and comments may be moderated and/or removed entirely at any time if they are a violation of the platform’s <a href="https://www.gartner.com/reviews/guidelines">Guidelines</a>.
+        </div>
+        <div class="backtotop"><a href="#top">Back to top</a></div>
+    </div>
+    <hr>
+    <div class="faq-section" id="cq6">
+        <div class="question">Where can I find a post that I made previously?</div>
+        <div class="answer">
+            Q&As and Polls that you originate are saved to your profile.
+            <ol>
+                <li>Navigate to the menu bar at the top of the page and click on your avatar. From the drop down menu, click My Content.</li>
+                <li>On the My Content page, click the My Posts tab to view your posts in chronological order and able to be filtered by type.</li>
+            </ol>
+        </div>
+        <div class="backtotop"><a href="#top">Back to top</a></div>
+    </div>
+    <hr>
+    <div class="faq-section" id="cq7">
+        <div class="question">How do I know who posted a Q&A or Poll?</div>
+        <div class="answer">
+            Q&As and Quick Polls are posted anonymously and by design, members are encouraged to leverage this feature by making posts that are secure and judgement free.
+        </div>
+        <div class="backtotop"><a href="#top">Back to top</a></div>
+    </div>
+    <hr>
+    <div class="faq-section" id="cq8">
+        <div class="question">How do I view Poll results?</div>
+        <div class="answer">
+            After a minimum response threshold is met to protect participant contributions. If you create a Poll you will be able to see the results and the list of participants. For Polls created by other members, results will be revealed once you have answered. You can then Filter and Share Insights to share the data online or in presentations.
+        </div>
+        <div class="backtotop"><a href="#top">Back to top</a></div>
+    </div>
+    <hr>
+    <div class="faq-section" id="cq9">
+        <div class="question">How do I filter, download, and share Poll results?</div>
+        <div class="answer">
+            <ol>
+                <li>Members are able to filter, download, and share Poll results by selecting Filter and Share Insights.</li>
+                <li>A pop-up window will appear where you can customize a variety of options, which include:
+                    <ul>
+                        <li>Data filters: Company size; department; role; industry; geography.</li>
+                        <li>Insight text: By default, the Social Card provides insights based on your previously-selected data filters; however, you can choose to rephrase the insights provided or type a new insight entirely to suit your purpose.</li>
+                        <li>Insight position: Choose where you would like your Social Card to display the insight text.</li>
+                        <li>Show question: Determine whether you want to display the Quick Poll question within your Social Card.</li>
+                        <li>Chart type: Select which type of chart would best display your data or resonate most with your audience.</li>
+                    </ul>
+                </li>
+                <li>Click Download to save the image on your computer and re-distribute it as you wish.</li>
+                <li>Each Poll has an icon to Share at the bottom of the post and a unique hyperlink that you can promote with only select details being visible to non-members. Only logged-in members will be able see complete results and participate based on their profile’s alignment. Remember to tag us on <a href="https://www.linkedin.com/showcase/gartner-peer-experiences/">LinkedIn</a> and <a href="https://twitter.com/Gartner_Peer">X/Twitter!</a></li>
+            </ol>
+        </div>
+        <div class="backtotop"><a href="#top">Back to top</a></div>
+    </div>
+    <hr>
+    <div class="faq-section" id="cq10">
+        <div class="question">How do I answer a Q&A post?</div>
+        <div class="answer">
+            <ol>
+                <li>Click on the Comment  button located underneath the question.</li>
+                <li>Write your comment. You can also tag any peers that can provide insights or share their opinions by typing “@” followed by their name, and clicking on the individual’s name once it pops up.</li>
+                <li>You will not be able to edit your comment once it’s published, so please review it and make any necessary changes prior to publishing.</li>
+                <li>Click Post to publish your comment.</li>
+            </ol>
+        </div>
+        <div class="backtotop"><a href="#top">Back to top</a></div>
+    </div>
+    <hr>
+    <div class="faq-section" id="cq11">
+        <div class="question">I’m unable to comment on a post or participate in a poll — why is that?</div>
+        <div class="answer">
+            Contribution to Q&A and Poll posts is limited to members whose profiles align to the topic and details of the member who originated it. Details of which community members are eligible to contribute are listed at the top of all posts.<br>
+            <br>
+            Profile details are set when you first sign-in and confirmed during the verification process. If you believe these details are incorrect and that you should be able to contribute, please contact <a href="mailto:peercommunity@gartner.com">peercommunity@gartner.com</a> including details of the specific post.
+        </div>
+        <div class="backtotop"><a href="#top">Back to top</a></div>
+    </div>
+    <hr>
+    <div class="faq-section" id="cq12">
+        <div class="question">How do I access real-time Benchmark Surveys?</div>
+        <div class="answer">
+            <ol>
+                <li>Navigate to Resources under left-hand menu or at the top of the page and select Benchmark Surveys.</li>
+                <li>Click on Take Survey for what topic you’re interested in.</li>
+                <li>In order to benchmark against peers in real-time, you will need to answer the survey questions first.</li>
+                <li>After answering the survey questions you will also have the option to Filter and Share Insights for each individual question. A pop-up window will appear where you can customize a variety of options and then Download a image and re-distribute it as you wish.</li>
+                <li>Benchmark Surveys are all intended to be matched with a One-Minute Insights report, a comprehensive review and snapshot of the results that is completed by Gartner Peer Community’s staff.</li>
+            </ol>
+        </div>
+        <div class="backtotop"><a href="#top">Back to top</a></div>
+    </div>
+    <hr>
+    <div class="faq-section" id="cq13">
+        <div class="question">Where can I access One-Minute Insights reports?</div>
+        <div class="answer">
+            <ol>
+                <li>Navigate to Resources under left-hand menu or at the top of the page and select One-Minute Insights</li>
+                <li>You may filter your search by topic under Filter content by. You can select multiple topics using this method.</li>
+                <li>Click View Insights on the report you’re interested in.</li>
+                <li>Each report is available for you to download.</li>
+            </ol>
+        </div>
+        <div class="backtotop"><a href="#top">Back to top</a></div>
+    </div>
+    <hr>
+    <div class="faq-section" id="cq14">
+        <div class="question">Where can I find trending content?</div>
+        <div class="answer">
+            Logged-in member’s homepage feed will populate Q&As and Polls that have been recently interacted by peers, as well as recently published One-Minute Insight reports that are all aligned to the member’s profile and access.
+        </div>
+        <div class="backtotop"><a href="#top">Back to top</a></div>
+    </div>
+    <hr>
+    <div class="faq-section" id="cq15">
+        <div class="question">How do I search for relevant existing insights and posts?</div>
+        <div class="answer">
+            Navigate to the search bar at the top of the page and utilize for your desired topics or keywords to produce relevant Q&As, Polls, One-Minute Insights, Benchmark Surveys, and User Profiles.
+        </div>
+        <div class="backtotop"><a href="#top">Back to top</a></div>
+    </div>
+    <hr>
+    <div class="faq-section" id="cq16">
+        <div class="question">How do I save posts that I’m interested in? Where can I access my saved content?</div>
+        <div class="answer">
+            <ol>
+                <li>At the bottom of each Q&A and Poll post is the option to Save and doing so will privately add the post to your Saved Content.</li>
+                <li>Navigate to the menu bar at the top of the page and click on your avatar. From the drop down menu, click My Content.</li>
+                <li>On the My Content page, click the Saved Content tab.</li>
+            </ol>
+        </div>
+        <div class="backtotop"><a href="#top">Back to top</a></div>
+    </div>
+    <hr>
+    <div class="faq-section" id="cq17">
+        <div class="question">Who are “Ambassadors”? How can I apply to be one?</div>
+        <div class="answer">
+            Peer Community Ambassadors are identified by a special designation on their profile. They are the community’s most active contributing members and trusted leaders with strong experience in their domains. In exchange for their activity and support in growing a high-quality community they receive special alerts and other unique opportunities in addition to their profile’s designation.<br>
+            <br>
+            The status of an Ambassador is ongoing unless there is a cause for removal. Current status is reflected by the individual’s profile designation.<br>
+            <br>
+            More details about the Ambassador program and a form to apply can be <a href="https://www.gartner.com/peer/ambassador/">found here</a>, or by navigating to Resources found under left-hand menu or at the top of the page.
+        </div>
+        <div class="backtotop"><a href="#top">Back to top</a></div>
+    </div>
+    <hr>
+    <div class="faq-section" id="cq18">
+        <div class="question">Can I invite my peers to join the Peer Community?</div>
+        <div class="answer">
+            <ol>
+                <li>Click on the right-hand column in you <a href="https://www.gartner.com/peer-community/feed">Peer Community Feed</a> and scroll down until you see a section titled Grow Our Community.</li>
+                <li>In the text area, enter one email address and select Invite.</li>
+                <li>The recipient will receive an email that indicates you have invited them to join. Invited parties</li>
+            </ol>
+        </div>
+        <div class="backtotop"><a href="#top">Back to top</a></div>
+    </div>
+    <hr>
+    <div class="faq-section" id="cq19">
+        <div class="question">How do I share posts? What will be visible to non-members?</div>
+        <div class="answer">
+            Individual Q&As and Polls all have an icon to Share at the bottom of the post. A pop-up will appear with pre-populated options to share via email, social media, or direct hyperlink.<br>
+            <br>
+            Non-members who access links to posts will have limited access to anonymized insights. In order to see full details, identities of contributors, and to participate they will need to be logged-in with a verified profile.
+        </div>
+        <div class="backtotop"><a href="#top">Back to top</a></div>
+    </div>
+    <hr>
+    <div class="faq-section" id="cq20">
+        <div class="question">Why does my account need to be verified?</div>
+        <div class="answer">
+            We verify users to ensure that every user knows who they are engaging with at all times and know where the information gathered is coming from. Verification helps to maintain community quality and the production of high-quality knowledge sharing that members can trust.
+        </div>
+        <div class="backtotop"><a href="#top">Back to top</a></div>
+    </div>
+    <hr>
+    <div class="faq-section" id="cq21">
+        <div class="question">How do I verify my account?</div>
+        <div class="answer">
+            To verify your account, please follow the prompts and instructions presented to you while logged into the Peer Community platform.<br>
+            <br>
+            You may also contact <a href="mailto:peercommunity@gartner.com">peercommunity@gartner.com</a> for additional support.
+        </div>
+        <div class="backtotop"><a href="#top">Back to top</a></div>
+    </div>
+    <hr>
+    <div class="faq-section" id="cq22">
+        <div class="question">I already verified my account – why did I lose my verification status?</div>
+        <div class="answer">
+            Certain changes made to your profile details can cause your verification status to revert. Please again follow the prompts and instructions that are presented to you while logged into the Peer Community platform. Members must have a currently verified account in order to fully contribute on the platform and redeem gift card points.<br>
+            <br>
+            In our ongoing efforts to ensure transparency and trust, we will from time to time re-verify Member data and contact information to confirm it is accurate and current. We will use our best efforts to ensure this process is as seamless as possible. Thank you for your patience and continued engagement.<br>
+            <br>
+            You may also contact <a href="mailto:peercommunity@gartner.com">peercommunity@gartner.com</a> for additional support.
+        </div>
+        <div class="backtotop"><a href="#top">Back to top</a></div>
+    </div>
+    <hr>
+    <div class="faq-section" id="cq23">
+        <div class="question">How do I change Expertise in my profile?</div>
+        <div class="answer">
+            <ol>
+                <li>Navigate to the menu bar at the top of the page and click on your avatar. From the drop down menu, click Profile.</li>
+                <li>Click on the edit icon next to Expertise on your profile page. A pop-up window will appear where you can click the categories and subcategories that you are knowledgeable about. Your selections will help to enhance your feed and notifications.</li>
+            </ol>
+        </div>
+        <div class="backtotop"><a href="#top">Back to top</a></div>
+    </div>
+    <hr>
+    <div class="faq-section" id="cq24">
+        <div class="question">How do I add my LinkedIn and Twitter accounts to my profile?</div>
+        <div class="answer">
+            <ol>
+                <li>Navigate to the menu bar at the top of the page and click on your avatar. From the drop down menu, click Profile.</li>
+                <li>On your profile page, click on the edit icon next to your name and profile picture.</li>
+                <li>Navigate to the bottom of the Edit Profile page and insert your LinkedIn and Twitter profile URLs under Social Handles.</li>
+            </ol>
+        </div>
+        <div class="backtotop"><a href="#top">Back to top</a></div>
+    </div>
+    <hr>
+    <div class="faq-section" id="cq25">
+        <div class="question">Will my profile be searchable?</div>
+        <div class="answer">
+            If you choose to opt-in to “profile discoverability” when you first sign in, your profile details (e.g. name, title and profile picture) will be searchable to all users within Gartner Peer Community and in external search outside of the community (e.g. in a Google search). This will allow other users to find you, connect with you and provide the optimal community experience. Your contributions will always only be visible to other logged-in and verified peers.<br>
+            <br>
+            In order to make changes to your profile discoverability, please contact <a href="mailto:peercommunity@gartner.com">peercommunity@gartner.com</a>.
+        </div>
+        <div class="backtotop"><a href="#top">Back to top</a></div>
+    </div>
+    <hr>
+    <div class="faq-section" id="cq26">
+        <div class="question">How do I unsubscribe from Peer Community emails?</div>
+        <div class="answer">
+            Navigate to the menu bar at the top of the page and click on your profile avatar. From the drop down menu, click My Notification Preferences to edit your notifications preferences.
+        </div>
+        <div class="backtotop"><a href="#top">Back to top</a></div>
+    </div>
+    <hr>
+    <div class="faq-section" id="cq27">
+        <div class="question">How do I delete my account?</div>
+        <div class="answer">
+            To delete your account, please contact <a href="mailto:peercommunity@gartner.com">peercommunity@gartner.com</a>.
+        </div>
+        <div class="backtotop"><a href="#top">Back to top</a></div>
+    </div>
+    <hr>
+    <div class="faq-section" id="cq28">
+        <div class="question">Where can I find general account support?</div>
+        <div class="answer">
+            For questions or feedback, please contact <a href="mailto:peercommunity@gartner.com">peercommunity@gartner.com</a>.
+        </div>
+        <div class="backtotop"><a href="#top">Back to top</a></div>
+    </div>
+
+    <footer style="margin-top:3em; color: #888; font-size: 0.9em;">
+        &copy; 2024 Peer Programs FAQ. For more information, visit <a href="https://www.gartner.com/reviews/faq">Gartner Peer Insights FAQ</a>.
+    </footer>
+</body>
+</html>
