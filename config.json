@@ -197,3 +197,42 @@
     }
   ]
 }
+{
+  "Peer Programs FAQ": [
+    {
+      "question": "I would like to submit a Peer Insights review. How can I do that?",
+      "answer": "Go to www.gartner.com/reviews/survey/vendor-product. If you experience any issues submitting a review, please contact us. You will receive a response back within 3 business days.\n\nBack to top"
+    },
+    {
+      "question": "I can't find the market/category and vendor I'd like to explore or review - will Peer Insights be expanded to cover more markets/categories?",
+      "answer": "Absolutely - please check back later. Our goal is to expand Gartner Peer Insights to cover many more markets/categories. We will continue to roll out new markets/categories in a controlled fashion, prioritizing those markets/categories with high readership in our expert research. Though, you can suggest a new category to be opened on Peer Insights by submitting this suggestion form. Your suggestion will then be evaluated by the Peer Insights team.\n\nBack to top"
+    },
+    {
+      "question": "Can I change my Peer Insights review after I've posted it?",
+      "answer": "In time you will be able to edit a review directly from the website. For now, if you need to make any edits or changes, please contact\n\nBack to top"
+    },
+    {
+      "question": "Which reviews are approved and what is the moderation process?",
+      "answer": "Reviews are assessed to determine whether or not a review meets Gartner Peer Insights' standards for context, quality, and relevance. If a review fails to meet these guidelines, an email is sent to the reviewer asking for additional information, post which it is re-assessed for publication.\n\nA great submission typically has the following characteristics:\n\n- Comments to explain the corresponding ratings\n- Variance in ratings throughout (it is unlikely that the reviewer would feel the same about every aspect of a product or service)\n- Ratings are logically consistent (the overall ratings are in line with the averages of the sub-ratings)\n- Demonstration of experience and expertise with regard to the respective product\n\nPlease note, it is the discretion of the Peer Insights group to determine how content is approved and published on the site. Content may be approved as full reviews or aggregated ratings only.\n\nBack to top"
+    },
+    {
+      "question": "If I submit a Peer Insights review, how long will it be before the review appears online?",
+      "answer": "There is a moderation process to ensure that all reviews are authentic and readable. During the review moderation process, you may receive an email asking for additional information to process your review. If you do not see your review in 10 business days after you submitted it, please contact us.\n\nBack to top"
+    },
+    {
+      "question": "What information about a reviewer is visible in Gartner Peer Insights?",
+      "answer": "The Reviewer Profile in a Gartner Peer Insights review contains demographic data about the reviewer and their company, such as job title, role, industry, and company size, but does not include the reviewer's actual name or company name in order to prevent personal identification.\n\nBack to top"
+    },
+    {
+      "question": "How many times may an individual submit a Peer Insights review?",
+      "answer": "There is no limit on the number of Peer Insights reviews that an individual can submit - though only one review can be submitted on a given vendor's products in any given market/category, and you must be qualified to write each review. In the future, the author will be able to update their review to add new information over time.\n\nBack to top"
+    },
+    {
+      "question": "How do you verify that reviews are from legitimate IT or end-user professionals?",
+      "answer": "Reviewers are verified through a multi-step process including completion of a profile with their e-mail, job role, title and details about their organization. For a review to be posted on Peer Insights, the writer must:\n\n- Attest to the authenticity of their review by certifying that are (i) not an employed by the vendor or employed by a competitor of the vendor, (ii) employed by an organization with an exclusive relationship (this includes exclusive partners, value-added resellers, system integrators and consultants); and (iii) their feedback is based entirely on their own personal experience with this vendor's product/service.\n- Have an identifiable corporate e-mail address that matches their stated company;\n- Be an IT professional or otherwise involved in technology purchasing;\n- Have a confirmed profile on gartner.com or a credible external site (e.g., LinkedIn) that verifies their identity, employer, and role;\n- Not be employed by a company that has a direct stake in the market/category or product being reviewed (this includes system integrators and consultants, as well as the company whose product is being reviewed or competitors in that market/category).\n\nIf you come across a review that looks illegitimate, please contact us."
+    }
+  ],
+  "Reviews FAQ": [],
+  "Community FAQ": []
+}
+
